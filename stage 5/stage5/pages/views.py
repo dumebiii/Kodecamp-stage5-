@@ -1,14 +1,14 @@
 from django.shortcuts import render
 
 # Create your views here.
-from django.http import HttpResponse
+from django.shortcuts import render
 
 
 def page1(request):
-    return HttpResponse("""<h1> KODECAMP Page 1</h1>""")
+    return render(request , 'pages/page1.html')
 
 def page2(request):
-    return HttpResponse("""<h1> KODECAMP Page 2</h1>""")
+    return  render(request , 'pages/page2.html')
 
 def page3(request):
-    return HttpResponse("""<h1> KODECAMP Page 3</h1>""")    
+    return render(request , 'pages/page3.html') 
